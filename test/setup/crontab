@@ -1,0 +1,2 @@
+* * * * * /usr/bin/flock -n /var/lock/send_notifications.lock /usr/local/bin/php /usr/src/myapp/php/SendNotificationsScript.php -l 100 -p 10 >> /var/log/send_notification.log 2>&1
+* * * * * /usr/bin/flock -n /var/lock/validate_emails.lock /usr/local/bin/php /usr/src/myapp/php/ValidateEmailsScript.php -l 100 -p 10 >> /var/log/validate_emails.log 2>&1
